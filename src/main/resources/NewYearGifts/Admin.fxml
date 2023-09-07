@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1080.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="NewYearGifts.Controllers.AdminController">
+    <ImageView fitHeight="3100.0" fitWidth="1100.0" layoutX="380.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@image_resources/wrap.jpg" />
+        </image>
+    </ImageView>
+    <left>
+        <AnchorPane prefHeight="720.0" prefWidth="387.0" BorderPane.alignment="CENTER">
+         <children>
+                <Label layoutX="34.0" layoutY="32.0" prefHeight="74.0" prefWidth="320.0" style="-fx-font-family: &quot;Helvetica&quot;;
+                -fx-font-size: 50px; -fx-font-weight: bold; -fx-underline: true;;" text="Control Panel" textFill="#000000">
+                    <font>
+                        <Font name="Times New Roman" size="30.0" />
+                    </font>
+                </Label>
+                <Button layoutX="34.0" layoutY="191.0" mnemonicParsing="false" onAction="#NewEmployee" prefHeight="60.0"
+                        prefWidth="320.0" style="-fx-background-color: linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+                        linear-gradient(#020b02, #3a3a3a), linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+                        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);; -fx-background-insets: 0,1,4,5;
+                        -fx-background-radius: 9,8,5,4; -fx-padding: 15 30 15 30; -fx-font-family: &quot;Helvetica&quot;;
+                        -fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333333;;
+                        fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);;" text="New Employee">
+               <font>
+                  <Font name="Rage Italic" size="12.0" />
+               </font></Button>
+                <Button layoutX="34.0" layoutY="286.0" mnemonicParsing="false" onAction="#EditEmployee" prefHeight="60.0" prefWidth="320.0" style="-fx-background-color: linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),        linear-gradient(#020b02, #3a3a3a),        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);; -fx-background-insets: 0,1,4,5;; -fx-background-radius: 9,8,5,4;; -fx-padding: 15 30 15 30;; -fx-font-family: &quot;Helvetica&quot;;; -fx-font-size: 18px;; -fx-font-weight: bold;; -fx-text-fill: #333333;; -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);;" text="Edit Existing Employee" />
+                <Button layoutX="33.0" layoutY="385.0" mnemonicParsing="false" onAction="#NewLocation" prefHeight="60.0" prefWidth="322.0" style="-fx-background-color: linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),        linear-gradient(#020b02, #3a3a3a),        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);; -fx-background-insets: 0,1,4,5;; -fx-background-radius: 9,8,5,4;; -fx-padding: 15 30 15 30;; -fx-font-family: &quot;Helvetica&quot;;; -fx-font-size: 18px;; -fx-font-weight: bold;; -fx-text-fill: #333333;; -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);;" text="New Shop Location" />
+                <Button layoutX="34.0" layoutY="610.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="60.0" prefWidth="320.0" style="-fx-background-color: linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),        linear-gradient(#020b02, #3a3a3a),        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%); -fx-background-insets: 0,1,4,5,6;; -fx-background-radius: 9,8,5,4,3;; -fx-padding: 15 30 15 30;; -fx-font-family: &quot;Helvetica&quot;;; -fx-font-size: 18px;; -fx-font-weight: bold;; -fx-text-fill: white;; -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);;" text="Log Out" />
+         </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="720.0" prefWidth="654.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="135.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image_resources/admin.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="-8.0" layoutY="64.0" prefHeight="102.0" prefWidth="685.0" style="-fx-font-family: &quot;Helvetica&quot;; -fx-font-size: 50; -fx-font-style: italic;; -fx-font-weight: bold;;" text="Welcome back, Administator" textAlignment="CENTER" textFill="#000000">
+                    <font>
+                        <Font name="Times New Roman Bold Italic" size="48.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
